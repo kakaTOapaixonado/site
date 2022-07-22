@@ -1,0 +1,28 @@
+.photo{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 43%;
+    margin-bottom: 10px;
+}
+body{
+    background-color: #20446d;
+    width: 400px;
+    margin: auto;
+}
+.post{  
+    background-color: white;
+    padding: 15px 0px 15px 0px;
+    margin: 25px;
+    border-radius: 15px;
+}
+.namePost{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+img{
+    width: 100%;
+}

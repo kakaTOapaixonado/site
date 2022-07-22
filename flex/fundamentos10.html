@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos10</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: darkgreen;
+            font-size: 24px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .s1{
+            flex-shrink: 1;
+        }
+
+        .g1{
+            flex-grow: 1;
+        }
+
+        .s0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .s2{
+            flex-shrink: 2;
+        }
+
+        .s3{
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex-Shrink : 1</p>
+    <div class="container">
+        <div class="item s1 g1">A</div>
+        <div class="item s1 g1">B</div>
+        <div class="item s1 g1">C</div>
+        <div class="item s1 g1">D</div>
+        <div class="item s1 g1">E</div>
+    </div>
+
+    <div class="container">
+        <div class="item s1 g1">A</div>
+        <div class="item s1 g1">B</div>
+        <div class="item s1 g1">O mais lindo</div>
+        <div class="item s1 g1">D</div>
+        <div class="item s1 g1">E</div>
+    
+    </div> <p>Flex-Shrink : 0 / Flex-Basis : 100px</p>
+    <div class="container">
+        <div class="item s0 g1">De sorocaba</div>
+        <div class="item s0 g1">B</div>
+        <div class="item s0 g1">O mais lindo</div>
+        <div class="item s0 g1">D</div>
+        <div class="item s0 g1">E regiao em volta</div>
+    </div>
+
+</div> <p>Flex-Shrink : Diferenciado</p>
+<div class="container">
+    <div class="item s2 g1">De sorocaba</div>
+    <div class="item s1 g1">B</div>
+    <div class="item s2 g1">O mais lindo</div>
+    <div class="item s1 g1">D</div>
+    <div class="item s3 g1">E regiao em volta</div>
+</div>
+</body>
+</html>

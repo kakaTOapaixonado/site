@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos8</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            border: 1px solid black;
+            justify-content: center;
+        }
+
+        .item{
+            background-color: greenyellow;
+            margin: 5px;
+            text-align: center;
+            color: black;
+        }
+
+        .flg0{
+            flex-grow: 0;
+        }
+
+        .flg1{
+            flex-grow: 1;
+        }
+
+        .flg2{
+            flex-grow: 2;
+        }
+
+        .flg3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex-Grow: 0</p>
+    <div class="container">
+        <div class="item flg0">A</div>
+        <div class="item flg0">B</div>
+        <div class="item flg0">C</div>
+        <div class="item flg0">D</div>
+    </div>
+
+    <p>Flex-Grow: 1</p>
+    <div class="container">
+        <div class="item flg1">A</div>
+        <div class="item flg1">B</div>
+        <div class="item flg1">C</div>
+        <div class="item flg1">D</div>
+    </div>
+
+    <p>Flex-Grow: alternado</p>
+    <div class="container">
+        <div class="item flg1">A</div>
+        <div class="item flg0">B</div>
+        <div class="item flg2">C</div>
+        <div class="item flg3">D</div>
+    </div>
+
+    <p>Flex-Grow: alternado-part2</p>
+    <div class="container">
+        <div class="item flg1">A</div>
+        <div class="item flg3">B</div>
+        <div class="item flg3">C</div>
+        <div class="item flg1">D</div>
+    </div>
+
+    <p>Flex-Grow</p>
+    <div class="container">
+        <div class="item flg3">Kevin</div>
+        <div class="item flg1">Muito</div>
+        <div class="item flg1">Muito</div>
+        <div class="item flg3">Maravilhoso</div>
+    </div>
+</body>
+</html>

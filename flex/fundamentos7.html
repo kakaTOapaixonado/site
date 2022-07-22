@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos7</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: purple;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">LINDO</div>
+        <div class="item">GATO</div>
+        <div class="item">MARAVILHOSO</div>
+        <div class="item">PERFEITO</div>
+        <div class="item">GOSTOSO</div>
+        <div class="item">MULKEKE MUITO GENTE BOA</div>
+        <div class="item">O HOMEM MAIS LINDO QUE VOCE VERA HOJE</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">LINDO</div>
+        <div class="item">GATO</div>
+        <div class="item">MARAVILHOSO</div>
+        <div class="item">PERFEITO</div>
+        <div class="item">GOSTOSO</div>
+        <div class="item">MULKEKE MUITO GENTE BOA</div>
+        <div class="item">O HOMEM MAIS LINDO QUE VOCE VERA HOJE</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">LINDO</div>
+        <div class="item">GATO</div>
+        <div class="item">MARAVILHOSO</div>
+        <div class="item">PERFEITO</div>
+        <div class="item">GOSTOSO</div>
+        <div class="item">MULKEKE MUITO GENTE BOA</div>
+        <div class="item">O HOMEM MAIS LINDO QUE VOCE VERA HOJE</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">LINDO</div>
+        <div class="item">GATO</div>
+        <div class="item">MARAVILHOSO</div>
+        <div class="item">PERFEITO</div>
+        <div class="item">GOSTOSO</div>
+        <div class="item">MULKEKE MUITO GENTE BOA</div>
+        <div class="item">O HOMEM MAIS LINDO QUE VOCE VERA HOJE</div>
+    </div>
+
+    <p>between</p>
+    <div class="container between">
+        <div class="item">LINDO</div>
+        <div class="item">GATO</div>
+        <div class="item">MARAVILHOSO</div>
+        <div class="item">PERFEITO</div>
+        <div class="item">GOSTOSO</div>
+        <div class="item">MULKEKE MUITO GENTE BOA</div>
+        <div class="item">O HOMEM MAIS LINDO QUE VOCE VERA HOJE</div>
+    </div>
+
+    <p>around</p>
+    <div class="container around">
+        <div class="item">LINDO</div>
+        <div class="item">GATO</div>
+        <div class="item">MARAVILHOSO</div>
+        <div class="item">PERFEITO</div>
+        <div class="item">GOSTOSO</div>
+        <div class="item">MULKEKE MUITO GENTE BOA</div>
+        <div class="item">O HOMEM MAIS LINDO QUE VOCE VERA HOJE</div>
+    </div>
+</body>
+</html>
